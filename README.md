@@ -1,6 +1,6 @@
 # Tarea: Sistema de Matriculación
 ## Profesor: Andrés Rubio del Río
-## Alumno:
+## Alumno: Francisco Javier Garrido Pomares
 
 Tu tarea va a consistir en modelar la gestión del **sistema de matriculación del instituto IES Al-Ándalus**. 
 Después de todas las especificaciones y requerimientos anotados, en este **primer spring** de la aplicación 
@@ -28,7 +28,7 @@ es la siguiente: [repositorio GitHub con el esqueleto del proyecto](https://gith
 
 Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré explicando los diferentes pasos a realizar:
 
-![](G:\Mi unidad\0Curso2024_2025\clases\DAW\temario\UT04\actividades\SistemaMatriculacionResuelto_v0\src\main\resources\SistemaMatriculacion_v0.png)
+![](https://github.com/andresrubiodelrio/SistemaMatriculacion_v0/blob/master/src/main/resources/SistemaMatriculacion_v0.png)
 
 
 #### Primeros Pasos
