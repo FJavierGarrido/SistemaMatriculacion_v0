@@ -40,23 +40,23 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
 -2. Crea los diferentes atributos que se indican en el diagrama de clases con su visibilidad adecuada, teniendo en cuenta que la constante **FORMATO_FECHA** tiene como valor el formato de una fecha en España: **dd/MM/YYYY**.
 -3. Crea el método `formateaNombre`. Este método debe normalizar un nombre eliminando caracteres en blanco de sobra y poniendo en mayúsculas la primera letra de cada palabra y en minúsculas las demás.
 -4. Crea el método `comprobarLetraDni`. Este método hará uso de los grupos de las expresiones regulares (para ello has debido definir la expresión regular con grupos) para quedarse con el número por un lado y con la letra por otro. Para saber si la letra es válida puedes seguir las instrucciones del siguiente enlace: [Comprobar letra dni](https://calculadorasonline.com/calcular-la-letra-del-dni-validar-un-dni/).
-5. Crea los métodos de acceso y modificación de cada atributo con la visibilidad adecuada, teniendo en cuenta que un nombre estará compuesto de palabras separadas por un espacio y cada palabra comenzará con una mayúscula y continuará con minúsculas. El **NIA** está formado por los cuatro primeros caracteres del nombre en minúsculas y los tres últimos dígitos del **DNI**. Además, ten presente que el **DNI**, **teléfono** y el **correo** deben también tener un formato válido, debiendo comprobar que la letra del **DNI** sea correcta. Debes crear las constantes para las expresiones regulares que luego utilizarás en los métodos de modificación. Los métodos de modificación lanzarán las excepciones adecuadas en caso de que el valor que se pretenda asignar al atributo no sea adecuado. 
-6. Crea el método `getIniciales`. Este método devolverá las iniciales del nombre.
-7. Ten presente que para que se pueda registrar el alumnado en el sistema, este debe tener como mínimo 16 años (**MIN_EDAD_ALUMNADO**).
-8. Crea el **constructor con parámetros** que hará uso de los métodos de modificación.
-8. Crea el **constructor copia**.
-9. Crea los métodos `equals` y `hashCode`, sabiendo que dos alumnos se considerarán iguales si su DNI es el mismo.
-10. Crea el método `imprimir` para que devuelva la cadena que esperan los tests.
-11. Crea el método `toString` que devuelva la cadena que esperan los tests.
-11. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
+-5. Crea los métodos de acceso y modificación de cada atributo con la visibilidad adecuada, teniendo en cuenta que un nombre estará compuesto de palabras separadas por un espacio y cada palabra comenzará con una mayúscula y continuará con minúsculas. El **NIA** está formado por los cuatro primeros caracteres del nombre en minúsculas y los tres últimos dígitos del **DNI**. Además, ten presente que el **DNI**, **teléfono** y el **correo** deben también tener un formato válido, debiendo comprobar que la letra del **DNI** sea correcta. Debes crear las constantes para las expresiones regulares que luego utilizarás en los métodos de modificación. Los métodos de modificación lanzarán las excepciones adecuadas en caso de que el valor que se pretenda asignar al atributo no sea adecuado. 
+-6. Crea el método `getIniciales`. Este método devolverá las iniciales del nombre.
+-7. Ten presente que para que se pueda registrar el alumnado en el sistema, este debe tener como mínimo 16 años (**MIN_EDAD_ALUMNADO**).
+-8. Crea el **constructor con parámetros** que hará uso de los métodos de modificación.
+-8. Crea el **constructor copia**.
+-9. Crea los métodos `equals` y `hashCode`, sabiendo que dos alumnos se considerarán iguales si su DNI es el mismo.
+-10. Crea el método `imprimir` para que devuelva la cadena que esperan los tests.
+-11. Crea el método `toString` que devuelva la cadena que esperan los tests.
+-11. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### Curso
-1. Crea el enumerado `Curso` teniendo en cuenta que sus posibles valores son **PRIMERO** y **SEGUNDO**. 
-2. Crea el atributo `cadenaAMostrar` (String).
-3. Crea el **constructor** con la visibilidad adecuada, que almacenará en el atributo anterior el dato pasado por parámetro.
-4. Crea el método `imprimir` indicado en el diagrama de clases que deberá devolver una cadena con el formato `dígito.-cadenaAMostrar`, para que se use en las opciones de menú. (0.-Primero y 1.-Segundo).
-5. Crea el método **toString** que devuelva la cadena que esperan los tests.
-6. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
+-1. Crea el enumerado `Curso` teniendo en cuenta que sus posibles valores son **PRIMERO** y **SEGUNDO**. 
+-2. Crea el atributo `cadenaAMostrar` (String).
+-3. Crea el **constructor** con la visibilidad adecuada, que almacenará en el atributo anterior el dato pasado por parámetro.
+-4. Crea el método `imprimir` indicado en el diagrama de clases que deberá devolver una cadena con el formato `dígito.-cadenaAMostrar`, para que se use en las opciones de menú. (0.-Primero y 1.-Segundo).
+-5. Crea el método **toString** que devuelva la cadena que esperan los tests.
+-6. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### Grado
 1. Crea el enumerado `Grado` teniendo en cuenta que sus posibles valores son los indicados con anterioridad.
