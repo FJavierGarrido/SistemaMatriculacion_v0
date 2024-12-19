@@ -67,14 +67,14 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
 -6. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### CicloFormativo
-1. Crea la clase `CicloFormativo` con los atributos y visibilidad adecuados.
-2. Crea los métodos de acceso y modificación de cada atributo con la visibilidad adecuada, teniendo en cuenta que el **identificador** de un ciclo formativo será un número de cuatro dígitos.  Además, debes crear las constantes indicadas en el diagrama de clases y que luego utilizarás en los métodos de modificación, sabiendo que el número máximo de horas de un ciclo formativo son 2000 horas. Los métodos de modificación lanzarán las excepciones adecuadas en caso de que el valor que se pretenda asignar al atributo no sea adecuado.
-3. Crea el **constructor con parámetros** que hará uso de los métodos de modificación.
-4. Crea el **constructor copia**. 
-5. Un ciclo formativo será igual a otro si su identificador es el mismo. Basándote en ello crea los métodos `equals` y `hashCode`.
-6. Crea el método `imprimir` que devuelva la cadena que esperan los tests.
-7. Crea el método `toString` que devuelva la cadena que esperan los tests.
-8. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
+-1. Crea la clase `CicloFormativo` con los atributos y visibilidad adecuados.
+-2. Crea los métodos de acceso y modificación de cada atributo con la visibilidad adecuada, teniendo en cuenta que el **identificador** de un ciclo formativo será un número de cuatro dígitos.  Además, debes crear las constantes indicadas en el diagrama de clases y que luego utilizarás en los métodos de modificación, sabiendo que el número máximo de horas de un ciclo formativo son 2000 horas. Los métodos de modificación lanzarán las excepciones adecuadas en caso de que el valor que se pretenda asignar al atributo no sea adecuado.
+-3. Crea el **constructor con parámetros** que hará uso de los métodos de modificación.
+-4. Crea el **constructor copia**. 
+-5. Un ciclo formativo será igual a otro si su identificador es el mismo. Basándote en ello crea los métodos `equals` y `hashCode`.
+-6. Crea el método `imprimir` que devuelva la cadena que esperan los tests.
+-7. Crea el método `toString` que devuelva la cadena que esperan los tests.
+-8. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### EspecialidadProfesorado
 1. Crea el enumerado `EspecialidadProfesorado`teniendo en cuenta que cada instancia del enumerado puede ser el indicado en el diagrama de clases.
