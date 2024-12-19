@@ -77,12 +77,12 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
 -8. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### EspecialidadProfesorado
-1. Crea el enumerado `EspecialidadProfesorado`teniendo en cuenta que cada instancia del enumerado puede ser el indicado en el diagrama de clases.
-2. Crea el atributo con la visibilidad adecuada.
-3. Crea el **constructor** con la visibilidad adecuada, que almacenará en el atributo anterior el dato pasado por parámetro.
-4. Crea el método `imprimir` indicado en el diagrama de clases que deberá devolver una cadena con el formato `dígito.-cadenaAMostrar`, para que se use en las opciones de menú.
-5. Crea el método `toString` que devuelva la cadena que esperan los tests.
-6. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un commit.
+-1. Crea el enumerado `EspecialidadProfesorado`teniendo en cuenta que cada instancia del enumerado puede ser el indicado en el diagrama de clases.
+-2. Crea el atributo con la visibilidad adecuada.
+-3. Crea el **constructor** con la visibilidad adecuada, que almacenará en el atributo anterior el dato pasado por parámetro.
+-4. Crea el método `imprimir` indicado en el diagrama de clases que deberá devolver una cadena con el formato `dígito.-cadenaAMostrar`, para que se use en las opciones de menú.
+-5. Crea el método `toString` que devuelva la cadena que esperan los tests.
+-6. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un commit.
 
 #### Asignatura
 1. Crea la clase `Asignatura` con los atributos y visibilidad adecuados.
