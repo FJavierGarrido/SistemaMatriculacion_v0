@@ -116,7 +116,6 @@ public class CicloFormativo {
         return "Código ciclo formativo=" + codigo +
                 ", familia profesional=" + familiaProfesional +
                 ", grado=" + grado +
-
                 ", nombre ciclo formativo=" + nombre +
                 ", horas=" + horas ;
     }
