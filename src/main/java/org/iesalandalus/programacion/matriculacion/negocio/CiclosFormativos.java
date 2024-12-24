@@ -42,7 +42,7 @@ public class CiclosFormativos {
         return capacidad;
     }
 
-    // Método para insertar un alumno
+    // Método para insertar
     public void insertar(CicloFormativo cicloFormativo) throws OperationNotSupportedException {
         if (cicloFormativo == null) {
             throw new NullPointerException("ERROR: No se puede insertar un ciclo formativo nulo.");
@@ -63,7 +63,7 @@ public class CiclosFormativos {
         tamano++;
     }
 
-    // Método para buscar el índice de un alumno
+    // Método para buscar por índice
     private int buscarIndice(CicloFormativo cicloFormativo) {
         for (int i = 0; i < tamano; i++) {
             if (coleccionCiclosFormativos[i].equals(cicloFormativo)) {
