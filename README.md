@@ -112,13 +112,13 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
 -8. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### Alumnos
-1. Crea la clase `Alumno`, en el paquete adecuado, con los atributos y métodos especificados en el diagrama y la visibilidad adecuada.
-    1. Crea el **constructor con parámetros** que creará una lista de la capacidad indicada en el parámetro e inicializará los atributos de la clase a los valores correspondientes.
-    2. Crea el método `get` que devolverá una copia profunda de la colección haciendo uso del método `copiaProfundaHuespedes`.
-    3. Se permitirán `insertar` huéspedes no nulos al final de la colección sin admitir repetidos.
-    4. El método `buscar` devolverá un huésped si éste se encuentra en la colección y `null` en caso contrario.
-    5. El método `borrar`, si el huésped se encuentra en la colección, lo borrará y desplazará los elementos hacia la izquierda para dejar el array compactado.
-2. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
+-1. Crea la clase `Alumno`, en el paquete adecuado, con los atributos y métodos especificados en el diagrama y la visibilidad adecuada.
+-    1. Crea el **constructor con parámetros** que creará una lista de la capacidad indicada en el parámetro e inicializará los atributos de la clase a los valores correspondientes.
+-    2. Crea el método `get` que devolverá una copia profunda de la colección haciendo uso del método `copiaProfundaHuespedes`.
+-    3. Se permitirán `insertar` huéspedes no nulos al final de la colección sin admitir repetidos.
+-    4. El método `buscar` devolverá un huésped si éste se encuentra en la colección y `null` en caso contrario.
+-    5. El método `borrar`, si el huésped se encuentra en la colección, lo borrará y desplazará los elementos hacia la izquierda para dejar el array compactado.
+-2. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### CiclosFormativos
 1. Crea la clase `CiclosFormativos`, en el paquete adecuado, con los atributos y métodos especificados en el diagrama y la visibilidad adecuada.
