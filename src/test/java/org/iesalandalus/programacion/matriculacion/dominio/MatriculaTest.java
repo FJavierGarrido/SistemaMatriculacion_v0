@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MatriculaTest {
-/*
+
     private static final String ERROR_EXCEPCION = "Debería haber saltado la excepción.";
     private static final String ERROR_NO_EXCEPCION = "No debería haber saltado la excepción.";
     private static final String ALUMNO_NO_ESPERADO = "El alumno devuelto no es el que debería ser.";
@@ -117,6 +117,7 @@ public class MatriculaTest {
             assertEquals(coleccionAsignaturas[2], matricula.getColeccionAsignaturas()[2],ASIGNATURA_NO_ESPERADA);
 
         } catch (Exception e) {
+            System.out.println("Se produjo un error: " + e.getMessage());
             fail(ERROR_NO_EXCEPCION);
         }
     }
@@ -301,6 +302,8 @@ public class MatriculaTest {
             assertEquals(ERROR_MATRICULA_SUPERA_LIMITE_HORAS, e.getMessage(), MENSAJE_EXCEPCION_NO_CORRECTO);
             assertNull(matricula, OBJETO_DEBERIA_SER_NULO);
         } catch (Exception e) {
+            e.printStackTrace(); // para ver fallo
+
             fail(TIPO_EXCEPCION_NO_CORRECTA);
         }
 
@@ -434,11 +437,12 @@ public class MatriculaTest {
             assertEquals(cadenaEsperada, matricula.imprimir());
         }
         catch (Exception e) {
+            e.printStackTrace(); // para ver fallo
             fail(TIPO_EXCEPCION_NO_CORRECTA);
         }
 
 
 
     }
-*/
+
 }

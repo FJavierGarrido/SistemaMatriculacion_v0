@@ -243,6 +243,10 @@ public class Alumno {
         return Objects.hashCode(dni);
     }
 
+    public String imprimir(){
+        return "metodo imprimir alumno";
+    }
+
     @Override
     public String toString() {
         return "Número de Identificación del Alumnado " +

@@ -85,31 +85,31 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
 -6. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un commit.
 
 #### Asignatura
-1. Crea la clase `Asignatura` con los atributos y visibilidad adecuados.
-2. Crea los métodos de acceso y modificación de cada atributo, teniendo en cuenta que el identificador de una ciclo formativo será un número de cuatro dígitos.  Además, debes crear las constantes indicadas en el diagrama de clases y que luego utilizarás en los métodos de modificación, sabiendo que el número máximo de horas anuales de una asignatura son 300 horas y que el número máximo de horas de desdoble son 6. Los métodos de modificación lanzarán las excepciones adecuadas en caso de que el valor que se pretenda asignar al atributo no sea adecuado.
-3. Crea el **constructor con parámetros** que hará uso de los métodos de modificación.
-4. Crea el **constructor copia**.
-5. Una asignatura será igual a otra si si su identificador es el mismo. Basándote en ello crea los métodos `equals` y `hashCode`.
-6. Crea el método `imprimir` que devuelva la cadena que esperan los tests. 
-7. Crea el método `toString` que devuelva la cadena que esperan los tests. 
-8. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
+-1. Crea la clase `Asignatura` con los atributos y visibilidad adecuados.
+-2. Crea los métodos de acceso y modificación de cada atributo, teniendo en cuenta que el identificador de una ciclo formativo será un número de cuatro dígitos.  Además, debes crear las constantes indicadas en el diagrama de clases y que luego utilizarás en los métodos de modificación, sabiendo que el número máximo de horas anuales de una asignatura son 300 horas y que el número máximo de horas de desdoble son 6. Los métodos de modificación lanzarán las excepciones adecuadas en caso de que el valor que se pretenda asignar al atributo no sea adecuado.
+-3. Crea el **constructor con parámetros** que hará uso de los métodos de modificación.
+-4. Crea el **constructor copia**.
+-5. Una asignatura será igual a otra si si su identificador es el mismo. Basándote en ello crea los métodos `equals` y `hashCode`.
+-6. Crea el método `imprimir` que devuelva la cadena que esperan los tests. 
+-7. Crea el método `toString` que devuelva la cadena que esperan los tests. 
+-8. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### Matrícula
-1. Crea la clase `Matricula` con los atributos y visibilidad adecuados.
-2. Crea los métodos de acceso y modificación de cada atributo, teniendo en cuenta que:
-   1. El número máximo de horas de las asignaturas de una matrícula son 1000.
-   2. El número máximo de asignaturas de una matrícula son 10.
-   3. Como máximo, una matrícula se debe registrar con 15 días de retraso.
-   4. La fecha de anulación de una matrícula no puede superar los 6 meses.
-   5. El identificador de una matrícula debe ser un número positivo.
-   6. El curso académico debe tener el formato dd-dd, por ejemplo, 23-24.
-3. Crea el método `superaMaximoNumeroHorasMatricula` que deberá chequear si el total de horas de las asignaturas de la matrícula supera o no el máximo permitido.
-4. Crea el **constructor con parámetros** que hará uso de los métodos de modificación.
-4. Crea el **constructor copia**.
-5. Una matrícula será igual a otra si su identificador es el mismo. Basándote en ello crea los métodos `equals` y `hashCode`.
-6. Crea el método `imprimir` que devuelva la cadena que esperan los tests.
-7. Crea el método `toString` que devuelva la cadena que esperan los tests.
-8. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
+-1. Crea la clase `Matricula` con los atributos y visibilidad adecuados.
+-2. Crea los métodos de acceso y modificación de cada atributo, teniendo en cuenta que:
+-   1. El número máximo de horas de las asignaturas de una matrícula son 1000.
+-   2. El número máximo de asignaturas de una matrícula son 10.
+-   3. Como máximo, una matrícula se debe registrar con 15 días de retraso.
+-   4. La fecha de anulación de una matrícula no puede superar los 6 meses.
+-   5. El identificador de una matrícula debe ser un número positivo.
+-   6. El curso académico debe tener el formato dd-dd, por ejemplo, 23-24.
+-3. Crea el método `superaMaximoNumeroHorasMatricula` que deberá chequear si el total de horas de las asignaturas de la matrícula supera o no el máximo permitido.
+-4. Crea el **constructor con parámetros** que hará uso de los métodos de modificación.
+-4. Crea el **constructor copia**.
+-5. Una matrícula será igual a otra si su identificador es el mismo. Basándote en ello crea los métodos `equals` y `hashCode`.
+-6. Crea el método `imprimir` que devuelva la cadena que esperan los tests.
+-7. Crea el método `toString` que devuelva la cadena que esperan los tests.
+-8. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### Alumnos
 1. Crea la clase `Alumno`, en el paquete adecuado, con los atributos y métodos especificados en el diagrama y la visibilidad adecuada.
