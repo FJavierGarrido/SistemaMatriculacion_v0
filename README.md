@@ -139,14 +139,14 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
 -2. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### Matriculas
-1. Crea la clase `Matriculas`, en el paquete adecuado, con los atributos y métodos especificados en el diagrama y la visibilidad adecuada.
-    1. Crea el **constructor con parámetros** que creará una lista de la capacidad indicada en el parámetro e inicializará los atributos de la clase a los valores correspondientes.
-    2. Crea el método `get` que devolverá una copia profunda de la colección haciendo uso del método `copiaProfundaReservas`.
-    3. Se permitirán `insertar` reservas no nulas al final de la colección sin admitir repetidos.
-    4. El método `buscar` que devolverá el alquiler si éste se encuentra en la lista y null en caso contrario.
-    5. El método `borrar`, si la reserva se encuentra en la colección, la borrará y desplazará los elementos hacia la izquierda para dejar el array compactado.
-2. El método `get` que está sobrecargado y devolverá una colección de las matrículas realizadas por el alumno pasado por parámetro o una colección de las matrículas realizadas para el curso académico indicado como parámetro o una colección de las matrículas realizadas para el ciclo formativo indicado como parámetro.
-3. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
+-1. Crea la clase `Matriculas`, en el paquete adecuado, con los atributos y métodos especificados en el diagrama y la visibilidad adecuada.
+-    1. Crea el **constructor con parámetros** que creará una lista de la capacidad indicada en el parámetro e inicializará los atributos de la clase a los valores correspondientes.
+-    2. Crea el método `get` que devolverá una copia profunda de la colección haciendo uso del método `copiaProfundaReservas`.
+-    3. Se permitirán `insertar` reservas no nulas al final de la colección sin admitir repetidos.
+-    4. El método `buscar` que devolverá el alquiler si éste se encuentra en la lista y null en caso contrario.
+-    5. El método `borrar`, si la reserva se encuentra en la colección, la borrará y desplazará los elementos hacia la izquierda para dejar el array compactado.
+-2. El método `get` que está sobrecargado y devolverá una colección de las matrículas realizadas por el alumno pasado por parámetro o una colección de las matrículas realizadas para el curso académico indicado como parámetro o una colección de las matrículas realizadas para el ciclo formativo indicado como parámetro.
+-3. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### Opcion
 1. Crea el enumerado `Opcion` en el paquete indicado en el diagrama cuyas instancias corresponderán con cada una de las opciones del menú de nuestra aplicación. Cada instancia aceptará en su constructor una cadena correspondiente al mensaje que se mostrará por pantalla para dicha opción. Debes crear los atributos y métodos que se especifican en el diagrama, teniendo en cuenta que el método toString devolverá la cadena correspondiente a la concatenación del ordinal de la opción, la cadena " .- " y el mensaje a mostrar por la opción en cuestión.
