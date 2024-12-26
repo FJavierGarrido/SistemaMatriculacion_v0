@@ -149,8 +149,8 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
 -3. Comprueba que la **clase pasa los test** para la misma y cuando lo haga realiza un **commit**.
 
 #### Opcion
-1. Crea el enumerado `Opcion` en el paquete indicado en el diagrama cuyas instancias corresponderán con cada una de las opciones del menú de nuestra aplicación. Cada instancia aceptará en su constructor una cadena correspondiente al mensaje que se mostrará por pantalla para dicha opción. Debes crear los atributos y métodos que se especifican en el diagrama, teniendo en cuenta que el método toString devolverá la cadena correspondiente a la concatenación del ordinal de la opción, la cadena " .- " y el mensaje a mostrar por la opción en cuestión.
-2. Realiza un **commit** con la creación de este enumerado.
+-1. Crea el enumerado `Opcion` en el paquete indicado en el diagrama cuyas instancias corresponderán con cada una de las opciones del menú de nuestra aplicación. Cada instancia aceptará en su constructor una cadena correspondiente al mensaje que se mostrará por pantalla para dicha opción. Debes crear los atributos y métodos que se especifican en el diagrama, teniendo en cuenta que el método toString devolverá la cadena correspondiente a la concatenación del ordinal de la opción, la cadena " .- " y el mensaje a mostrar por la opción en cuestión.
+-2. Realiza un **commit** con la creación de este enumerado.
 
 #### Consola
 1. Crea la clase `Consola` en el paquete indicado en el diagrama.
