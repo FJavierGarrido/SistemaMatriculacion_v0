@@ -6,8 +6,8 @@ import javax.naming.OperationNotSupportedException;
 
 public class Alumnos {
     private int capacidad;
-    private int tamano;
-    private Alumno[] coleccionAlumnos;
+    private static int tamano;
+    private static Alumno[] coleccionAlumnos;
 
 
     // Constructor con parámetros
@@ -21,12 +21,12 @@ public class Alumnos {
     }
 
     // Método get para obtener una copia profunda de la colección
-    public Alumno[] get() {
+    public static Alumno[] get() {
         return copiaProfundaAlumnos();
     }
 
     // Método que realiza una copia profunda de la colección de alumnos
-    private Alumno[] copiaProfundaAlumnos() {
+    private static Alumno[] copiaProfundaAlumnos() {
         Alumno[] copia = new Alumno[tamano];
         for (int i = 0; i < tamano; i++) {
             copia[i] = new Alumno(coleccionAlumnos[i]);

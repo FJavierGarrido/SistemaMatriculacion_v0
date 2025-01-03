@@ -2,7 +2,9 @@ package org.iesalandalus.programacion.matriculacion.negocio;
 
 import org.iesalandalus.programacion.matriculacion.dominio.Alumno;
 import org.iesalandalus.programacion.matriculacion.dominio.Asignatura;
+import org.iesalandalus.programacion.matriculacion.dominio.CicloFormativo;
 import org.iesalandalus.programacion.matriculacion.dominio.Matricula;
+import org.iesalandalus.programacion.matriculacion.vista.Consola;
 
 import javax.naming.OperationNotSupportedException;
 
@@ -126,6 +128,7 @@ public class Matriculas {
     public Matricula[] get(Alumno alumno) {
         if (alumno == null) {
             throw new NullPointerException("ERROR: El alumno no puede ser nulo.");
+
         }
 
         // Contar cuántas matrículas pertenecen al alumno
@@ -175,8 +178,8 @@ public class Matriculas {
     }
 
     // Método para obtener las matrículas de un ciclo formativo específico
-    public Matricula[] get(CiclosFormativos ciclosFormativos) {
-        if (ciclosFormativos == null) {
+    public Matricula[] get(CicloFormativo cicloFormativo) {
+        if (cicloFormativo == null) {
             throw new NullPointerException("ERROR: El ciclo formativo no puede ser nulo.");
         }
 
@@ -186,7 +189,7 @@ public class Matriculas {
             // Recorremos las asignaturas de cada matrícula
             Asignatura[] asignaturas = coleccionMatriculas[i].getColeccionAsignaturas();  // Obtener asignaturas de la matrícula
             for (Asignatura asignatura : asignaturas) {
-                if (asignatura != null && asignatura.getCicloFormativo().equals(ciclosFormativos)) {
+                if (asignatura != null && asignatura.getCicloFormativo().equals(cicloFormativo)) {
                     contador++;
                     break; // Si encontramos una asignatura del ciclo, no necesitamos seguir buscando en esa matrícula
                 }
@@ -200,7 +203,7 @@ public class Matriculas {
             // Recorremos nuevamente las asignaturas de cada matrícula
             Asignatura[] asignaturas = coleccionMatriculas[i].getColeccionAsignaturas();  // Obtener asignaturas de la matrícula
             for (Asignatura asignatura : asignaturas) {
-                if (asignatura != null && asignatura.getCicloFormativo().equals(ciclosFormativos)) {
+                if (asignatura != null && asignatura.getCicloFormativo().equals(cicloFormativo)) {
                     resultado[indice++] = coleccionMatriculas[i];
                     break; // Ya hemos agregado la matrícula, no necesitamos seguir buscando en esa matrícula
                 }

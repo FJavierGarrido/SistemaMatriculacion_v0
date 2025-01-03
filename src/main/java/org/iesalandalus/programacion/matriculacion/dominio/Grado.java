@@ -2,9 +2,9 @@ package org.iesalandalus.programacion.matriculacion.dominio;
 
 public enum Grado {
 
-    GDCFGB(""),
-    GDCFGM(""),
-    GDCFGS("");
+    GDCFGB("GDCFGB"),
+    GDCFGM("GDCFGM"),
+    GDCFGS("GDCFGS");
 
     private String cadenaAMostrar;
 
