@@ -1,4 +1,4 @@
-package org.iesalandalus.programacion.matriculacion.vista;
+package org.iesalandalus.programacion.matriculacion.modelo.vista;
 
 public enum Opcion {
     SALIR("Salir"),

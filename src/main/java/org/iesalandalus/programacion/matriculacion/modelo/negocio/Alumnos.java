@@ -1,6 +1,6 @@
-package org.iesalandalus.programacion.matriculacion.negocio;
+package org.iesalandalus.programacion.matriculacion.modelo.negocio;
 
-import org.iesalandalus.programacion.matriculacion.dominio.Alumno;
+import org.iesalandalus.programacion.matriculacion.modelo.dominio.Alumno;
 
 import javax.naming.OperationNotSupportedException;
 
@@ -21,12 +21,12 @@ public class Alumnos {
     }
 
     // Método get para obtener una copia profunda de la colección
-    public static Alumno[] get() {
+    public Alumno[] get() {
         return copiaProfundaAlumnos();
     }
 
     // Método que realiza una copia profunda de la colección de alumnos
-    private static Alumno[] copiaProfundaAlumnos() {
+    private Alumno[] copiaProfundaAlumnos() {
         Alumno[] copia = new Alumno[tamano];
         for (int i = 0; i < tamano; i++) {
             copia[i] = new Alumno(coleccionAlumnos[i]);
