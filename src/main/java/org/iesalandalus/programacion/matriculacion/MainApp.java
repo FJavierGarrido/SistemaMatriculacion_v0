@@ -6,8 +6,8 @@ import org.iesalandalus.programacion.matriculacion.modelo.negocio.Alumnos;
 import org.iesalandalus.programacion.matriculacion.modelo.negocio.Asignaturas;
 import org.iesalandalus.programacion.matriculacion.modelo.negocio.CiclosFormativos;
 import org.iesalandalus.programacion.matriculacion.modelo.negocio.Matriculas;
-import org.iesalandalus.programacion.matriculacion.modelo.vista.Consola;
-import org.iesalandalus.programacion.matriculacion.modelo.vista.Opcion;
+import org.iesalandalus.programacion.matriculacion.vista.Consola;
+import org.iesalandalus.programacion.matriculacion.vista.Opcion;
 
 import javax.naming.OperationNotSupportedException;
 
