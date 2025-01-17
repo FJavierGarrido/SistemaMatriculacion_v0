@@ -1,6 +1,7 @@
 package org.iesalandalus.programacion.matriculacion.vista;
 
-import org.iesalandalus.programacion.matriculacion.dominio.*;
+import org.iesalandalus.programacion.matriculacion.controlador.Controlador;
+import org.iesalandalus.programacion.matriculacion.modelo.Modelo;
 import org.iesalandalus.programacion.matriculacion.modelo.dominio.*;
 import org.iesalandalus.programacion.matriculacion.modelo.negocio.Alumnos;
 import org.iesalandalus.programacion.matriculacion.modelo.negocio.CiclosFormativos;
@@ -10,8 +11,9 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 
-
 public class Consola {
+
+
     // Constructor privado para evitar instanciación
     private Consola() {
     }
@@ -70,23 +72,9 @@ public class Consola {
         System.out.println("\nIngrese el DNI: ");
         String dni = Entrada.cadena();
 
-        // Recorre la colección de huéspedes para buscar el DNI
-        for (Alumno alumno : Alumnos.get()) {
-            if (alumno.getDni().equals(dni)) {
-                // Entra y devuelve los datos, si encuentra el alumno
-                System.out.println("Alumno encontrado:");
-                System.out.println("Nombre: " + alumno.getNombre());
-                System.out.println("Dni: " + alumno.getDni());
-                System.out.println("Correo: " + alumno.getCorreo());
-                System.out.println("Teléfono: " + alumno.getTelefono());
-                System.out.println("Fecha de Nacimiento: " + alumno.getFechaNacimiento());
-                return alumno;
-            }
-        }
 
-        // Si no se encuentra un huésped con el DNI proporcionado
-        System.out.println("No se encontró ningún huésped con el DNI: " + dni);
-        return null;
+        // Crear un alumno con los datos ficticios y el DNI proporcionado
+        return new Alumno("nombre", dni, "correo@correo.es", "950303030", LocalDate.of(1986,4, 29));
     }
 
     public static LocalDate leerFecha(String mensaje) {
