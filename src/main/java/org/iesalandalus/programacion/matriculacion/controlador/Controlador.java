@@ -25,17 +25,17 @@ public class Controlador {
         this.modelo = modelo;
         this.vista = vista;
 
-        //this.vista.setControlador(this);
+        this.vista.setControlador(this);
     }
 
     public void comenzar() {
         modelo.comenzar();
-        //vista.comenzar()
+        vista.comenzar();
     }
 
     public void terminar() {
         modelo.terminar();
-        //vista.terminar();
+        vista.terminar();
     }
 
     public void insertar (Alumno alumno) throws Exception {

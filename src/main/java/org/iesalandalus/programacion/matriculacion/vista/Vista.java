@@ -9,7 +9,7 @@ public class Vista {
     private Controlador controlador;
 
 
-    private void setControlador(Controlador controlador) {
+    public void setControlador(Controlador controlador) {
         this.controlador = controlador;
     }
 
@@ -99,7 +99,8 @@ public class Vista {
         }
     }
 
-    private void insertarAlumno(){
+    private void insertarAlumno()  {
+
         try {
             Alumno alumno = new Alumno(Consola.leerAlumno());
             controlador.insertar(alumno);

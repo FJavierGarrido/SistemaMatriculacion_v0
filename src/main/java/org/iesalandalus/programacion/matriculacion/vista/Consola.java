@@ -40,24 +40,38 @@ public class Consola {
         return Opcion.values()[opcion];
     }
 
-    public static Alumno leerAlumno() throws Exception{
+    public static Alumno leerAlumno(){
         System.out.println("\n----  Ingresar datos del Alumno  ----");
+        String nombre;
+        do {
+            System.out.println("Ingrese el nombre: ");
+            nombre = Entrada.cadena();
+        }while (nombre.trim().isEmpty());
 
-        System.out.println("Ingrese el nombre: ");
-        String nombre = Entrada.cadena();
 
-        System.out.println("Ingrese el DNI: ");
-        String dni = Entrada.cadena();
+        String dni;
+        do {
+            System.out.println("Ingrese el DNI: ");
+            dni = Entrada.cadena();
+        }while (dni.trim().isEmpty());
 
+        String correo;
+        do {
         System.out.println("Ingrese el email: ");
-        String correo = Entrada.cadena();
+        correo = Entrada.cadena();
+        }while (correo.trim().isEmpty());
 
+        String telefono;
+        do {
         System.out.println("Ingrese el tel�fono: ");
-        String telefono = Entrada.cadena();
+        telefono = Entrada.cadena();
+        }while (telefono.trim().isEmpty());
 
+        String fechaNacimiento;
+        do {
         System.out.println("Ingrese la fecha de nacimiento: (dd/mm/yyyy)");
-        String fechaNacimiento = Entrada.cadena();
-
+        fechaNacimiento = Entrada.cadena();
+        }while (fechaNacimiento.trim().isEmpty() || fechaNacimiento.length()!=10);
 
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         LocalDate fecha = LocalDate.parse(fechaNacimiento, formato);
