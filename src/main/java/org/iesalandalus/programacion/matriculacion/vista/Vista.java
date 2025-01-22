@@ -102,7 +102,7 @@ public class Vista {
     private void insertarAlumno()  {
 
         try {
-            Alumno alumno = new Alumno(Consola.leerAlumno());
+            Alumno alumno = Consola.leerAlumno();
             controlador.insertar(alumno);
             System.out.println("Alumno insertado correctamente.");
 
@@ -113,7 +113,7 @@ public class Vista {
 
     private void buscarAlumno(){
         try {
-            Alumno alumno = new Alumno(Consola.getAlumnoPorDni());
+            Alumno alumno = Consola.getAlumnoPorDni();
             alumno = controlador.buscar(alumno);
 
             if (alumno != null) {
@@ -129,7 +129,7 @@ public class Vista {
 
     private void borrarAlumno(){
         try {
-            Alumno alumno = new Alumno(Consola.getAlumnoPorDni());
+            Alumno alumno = Consola.getAlumnoPorDni();
             controlador.borrar(alumno);
             System.out.println("Aula borrada correctamente.");
         } catch (Exception e) {
@@ -152,7 +152,7 @@ public class Vista {
 
     private void insertarAsignatura(){
         try {
-            Asignatura asignatura = new Asignatura(Consola.leerAsignatura());
+            Asignatura asignatura = Consola.leerAsignatura();
             controlador.insertar(asignatura);
             System.out.println("Asignatura insertada correctamente.");
         } catch (Exception e) {
@@ -162,7 +162,7 @@ public class Vista {
 
     private void buscarAsignatura(){
         try {
-            Asignatura asignatura = new Asignatura(Consola.getAsignaturaPorCodigo());
+            Asignatura asignatura = Consola.getAsignaturaPorCodigo();
             asignatura = controlador.buscar(asignatura);
 
             if (asignatura != null) {
@@ -177,7 +177,7 @@ public class Vista {
 
     private void borrarAsignatura(){
         try {
-            Asignatura asignatura = new Asignatura(Consola.leerAsignatura());
+            Asignatura asignatura = Consola.leerAsignatura();
             controlador.borrar(asignatura);
             System.out.println("Asignatura borrada correctamente.");
         } catch (Exception e) {
@@ -200,7 +200,7 @@ public class Vista {
 
     private void insertarCicloFormativo(){
         try {
-            CicloFormativo cicloFormativo = new CicloFormativo(Consola.leerCicloFormativo());
+            CicloFormativo cicloFormativo = Consola.leerCicloFormativo();
             controlador.insertar(cicloFormativo);
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -209,7 +209,7 @@ public class Vista {
 
     private void buscarCicloFormativo(){
         try {
-            CicloFormativo cicloFormativo = new CicloFormativo(Consola.getCicloFormativoPorCodigo());
+            CicloFormativo cicloFormativo = Consola.getCicloFormativoPorCodigo();
             cicloFormativo = controlador.buscar(cicloFormativo);
 
             if (cicloFormativo != null) {
@@ -225,7 +225,7 @@ public class Vista {
 
     private void borrarCicloFormativo(){
         try {
-            CicloFormativo cicloFormativo = new CicloFormativo(Consola.leerCicloFormativo());
+            CicloFormativo cicloFormativo = Consola.leerCicloFormativo();
             controlador.borrar(cicloFormativo);
             System.out.println("Ciclo Formativo borrado correctamente.");
 
@@ -250,7 +250,7 @@ public class Vista {
 
     private void insertarMatricula(){
         try {
-            Matricula matricula = new Matricula(Consola.leerMatricula());
+            Matricula matricula = Consola.leerMatricula();
             controlador.insertar(matricula);
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -259,7 +259,7 @@ public class Vista {
 
     private void buscarMatricula(){
         try {
-            Matricula matricula = new Matricula(Consola.getMatriculaPorIdentificador());
+            Matricula matricula = Consola.getMatriculaPorIdentificador();
             matricula = controlador.buscar(matricula);
 
             if (matricula != null) {
@@ -275,7 +275,7 @@ public class Vista {
 
     private void anularMatricula(){
         try {
-            Matricula matricula = new Matricula(Consola.leerMatricula());
+            Matricula matricula = Consola.leerMatricula();
             controlador.borrar(matricula);
         } catch (Exception e) {
             System.out.println(e.getMessage());
