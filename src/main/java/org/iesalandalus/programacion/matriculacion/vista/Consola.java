@@ -50,31 +50,73 @@ public class Consola {
 
 
         String dni;
+        boolean dniValido = false;
         do {
             System.out.println("Ingrese el DNI: ");
             dni = Entrada.cadena();
-        }while (dni.trim().isEmpty());
+            try {
+                //intento crear un alumno para que me compruebe si el dni introducido es correcto, de no ser así lo vuelve a pedir evitando que salte el programa
+                Alumno alumnoTemp = new Alumno("Nombre Ficticio", dni, "jav@jav.es", "676071010", LocalDate.now());
+                dniValido=true;
+
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+                System.out.flush(); // Limpiar el buffer de salida
+
+                dniValido = false;
+            }
+        }while (!dniValido);
+
+
+
 
         String correo;
+        boolean correoValido=false;
         do {
         System.out.println("Ingrese el email: ");
         correo = Entrada.cadena();
-        }while (correo.trim().isEmpty());
+            try {
+                Alumno alumnoTemp = new Alumno("Nombre Ficticio", "75718314Z", correo, "676071010", LocalDate.now());
+                correoValido=true;
+
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
+        }while (!correoValido);
+
 
         String telefono;
+        boolean telefonoValido=false;
         do {
-        System.out.println("Ingrese el tel�fono: ");
+        System.out.println("Ingrese el teléfono: ");
         telefono = Entrada.cadena();
-        }while (telefono.trim().isEmpty());
+            try {
+                Alumno alumnoTemp = new Alumno("Nombre Ficticio", "75718314Z", "jav@jav.es", telefono, LocalDate.now());
+                telefonoValido=true;
+
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
+        }while (!telefonoValido);
+
 
         String fechaNacimiento;
+        LocalDate fecha = null;
+        boolean fechaValida=false;
         do {
         System.out.println("Ingrese la fecha de nacimiento: (dd/mm/yyyy)");
         fechaNacimiento = Entrada.cadena();
-        }while (fechaNacimiento.trim().isEmpty() || fechaNacimiento.length()!=10);
+            try {
+                DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+                fecha = LocalDate.parse(fechaNacimiento, formato);
 
-        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate fecha = LocalDate.parse(fechaNacimiento, formato);
+                Alumno alumnoTemp = new Alumno("Nombre Ficticio", "75718314Z", "jav@jav.es", "676071038", fecha);
+                fechaValida=true;
+
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }while (!fechaValida);
 
 
         return new Alumno(nombre, dni, correo, telefono, fecha);

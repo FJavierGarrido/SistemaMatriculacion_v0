@@ -104,6 +104,8 @@ public class Vista {
         try {
             Alumno alumno = new Alumno(Consola.leerAlumno());
             controlador.insertar(alumno);
+            System.out.println("Alumno insertado correctamente.");
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -111,8 +113,15 @@ public class Vista {
 
     private void buscarAlumno(){
         try {
-            Alumno alumno = new Alumno(Consola.leerAlumno());
-            controlador.buscar(alumno);
+            Alumno alumno = new Alumno(Consola.getAlumnoPorDni());
+            alumno = controlador.buscar(alumno);
+
+            if (alumno != null) {
+                System.out.println("El alumno es: " + alumno);
+            } else {
+                System.out.println("No existe ningún alumno con ese dni.");
+            }
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -120,8 +129,9 @@ public class Vista {
 
     private void borrarAlumno(){
         try {
-            Alumno alumno = new Alumno(Consola.leerAlumno());
+            Alumno alumno = new Alumno(Consola.getAlumnoPorDni());
             controlador.borrar(alumno);
+            System.out.println("Aula borrada correctamente.");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -144,6 +154,7 @@ public class Vista {
         try {
             Asignatura asignatura = new Asignatura(Consola.leerAsignatura());
             controlador.insertar(asignatura);
+            System.out.println("Asignatura insertada correctamente.");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -151,8 +162,14 @@ public class Vista {
 
     private void buscarAsignatura(){
         try {
-            Asignatura asignatura = new Asignatura(Consola.leerAsignatura());
-            controlador.buscar(asignatura);
+            Asignatura asignatura = new Asignatura(Consola.getAsignaturaPorCodigo());
+            asignatura = controlador.buscar(asignatura);
+
+            if (asignatura != null) {
+                System.out.println("La asignatura es: " + asignatura);
+            } else {
+                System.out.println("No existe ninguna asignatura con ese código.");
+            }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -162,6 +179,7 @@ public class Vista {
         try {
             Asignatura asignatura = new Asignatura(Consola.leerAsignatura());
             controlador.borrar(asignatura);
+            System.out.println("Asignatura borrada correctamente.");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -191,8 +209,15 @@ public class Vista {
 
     private void buscarCicloFormativo(){
         try {
-            CicloFormativo cicloFormativo = new CicloFormativo(Consola.leerCicloFormativo());
-            controlador.buscar(cicloFormativo);
+            CicloFormativo cicloFormativo = new CicloFormativo(Consola.getCicloFormativoPorCodigo());
+            cicloFormativo = controlador.buscar(cicloFormativo);
+
+            if (cicloFormativo != null) {
+                System.out.println("El Ciclo Formativo es: " + cicloFormativo);
+            } else {
+                System.out.println("No existe ningún ciclo formativo con ese código.");
+            }
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -202,6 +227,8 @@ public class Vista {
         try {
             CicloFormativo cicloFormativo = new CicloFormativo(Consola.leerCicloFormativo());
             controlador.borrar(cicloFormativo);
+            System.out.println("Ciclo Formativo borrado correctamente.");
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -232,8 +259,15 @@ public class Vista {
 
     private void buscarMatricula(){
         try {
-            Matricula matricula = new Matricula(Consola.leerMatricula());
-            controlador.buscar(matricula);
+            Matricula matricula = new Matricula(Consola.getMatriculaPorIdentificador());
+            matricula = controlador.buscar(matricula);
+
+            if (matricula != null) {
+                System.out.println("La matrícula es: " + matricula);
+            } else {
+                System.out.println("No existe ninguna matrícula con ese identificador.");
+            }
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

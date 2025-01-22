@@ -13,7 +13,7 @@ public class Alumno {
     private static final String ER_DNI= "([0-9]{8})([a-zA-Z])";
     public static final String FORMATO_FECHA="\\d{2}/\\d{2}/\\d{4}";
     private static final String ER_NIA= "([a-z]{4})([0-9]{2})([a-zA-Z]{1})";
-    public static final int MIN_EDAD_ALUMNADO = 16;
+    private static final int MIN_EDAD_ALUMNADO = 16;
 
     private String nombre;
     private String telefono;
